@@ -1,2 +1,2 @@
 #!/bin/bash
-n=0; while IFS= read -r l; do if (( n % 2 == 0 )); then echo "$l"; fi; ((n++)); done
+while IFS= read -r l1; do echo "$l1"; IFS= read -r l2; done
