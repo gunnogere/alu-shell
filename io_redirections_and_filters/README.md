@@ -18,3 +18,15 @@ How to concatenate files and print on the standard output
 How to reverse a string
 How to remove sections from each line of files
 What is the /etc/passwd file and what is its format
+
+
+10-no_more_js-  Explanation
+
+find . → search recursively in the current directory and all subfolders.
+-type f → only match regular files, so directories are ignored.
+-name "*.js" → only .js files.
+-exec rm {} \+ → delete all matching files.
+Works recursively
+Does not delete directories
+Two lines exactly
+Compliant with your project rules (no sed, no awk, no backticks, no && or ||)
