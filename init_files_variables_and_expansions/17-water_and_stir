@@ -1,2 +1,2 @@
 #!/bin/bash
-alias ls='rm *'
+echo $(( 10#${WATER} + 10#${STIR} ))
