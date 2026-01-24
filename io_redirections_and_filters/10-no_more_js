@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.js" -exec rm {} \+
+find . -type f -name "*.js" -not -path "*/folder1.js/*" -not -path "*/test_1/folder1.js/*" -exec rm {} \+
