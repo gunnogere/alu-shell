@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Bash script that lists current directory files
+# Shows only the part after the first dash, skips hidden files
+
+for file in *; do
+    # Skip if it's a hidden file (starts with .)
+    [ -e "$file" ] || continue
+    
+    # Check if file contains a dash
+    if [[ "$file" == *-* ]]; then
+        # Print part after first dash
+        echo "${file#*-}"
+    else
+        # Print file name as is
+        echo "$file"
+    fi
+done
