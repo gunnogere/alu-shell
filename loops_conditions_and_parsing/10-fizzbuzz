@@ -6,7 +6,7 @@
 # - Buzz for multiples of 5
 # - Otherwise, display the number
 # - Display in list format
-
+## Instead of  "if [ $((count % 3)) -eq 0 ] && [ $((count % 5)) -eq 0 ]; we use the LCM which 15"
 count=1
 
 while [ $count -le 100 ]; do
