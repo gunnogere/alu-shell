@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Show all processes in a user-oriented format with hierarchy
+
+ps -eo user,pid,ppid,tty,stat,cmd --forest
